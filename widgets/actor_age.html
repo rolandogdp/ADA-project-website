@@ -1,0 +1,106 @@
+<!--
+	THIS EXAMPLE WAS DOWNLOADED FROM https://echarts.apache.org/examples/en/editor.html?c=line-simple&code=PYBwLglsB2AEC8sDeBYAULWkwBsCmAXMuppmHgB5hEDkAhgG54BOdA5nrO58AGZcBjMMGYBnGiVgBfADSSKAQQoRRRVBlJgAniEKwaAuuTYitNORswATI3SIBtSaVgBGAJzuZrtwCYALF7uPgCsgb4AbGE-AOxRABxRbmEAzAAMKS4pPinJKQFOpO7Jod7JkaWxpQmlSd5-6XWZddl1uXUBdSXufpEFmN2V3dXdte7BDWNNYy1jbWMdY11uweVjg8sJfd7Bo27hE3tTezN7c3sLe0vhq3vr4cN7u9HpW-7RR9En0WfRF9FL0Ru0XW0Qe0V2cQOcSOcWyrzccTOcQucSWcRucXWcQecV2bgOHjCviJZzc-UshTcyyJNzc6wRRNqPlSLK8zNSTXZLXZbXZHXZJXZvQpmHZlXZ1XZTI5DWZLk5HO5HN5HP5HOCBQAupJZJItEoVGoCtpdLQGHQcABXPASDS6jSiFgQPCqWCOCnqZzWWwOLb9aIAOgOQbZqRDsGZAeu0ZjsclPnD_gDfmS_zZLijsaz102ItIPnCybZhdlwQD1Ijfijfh8qPeNbrLhr6YD3xczzbHeS7YsXvzZeSBdS6OW4WCPnb_MLvzZcQD3eCoLJ33uNc5gcH-xHK3Hk97fYjgdSPgR41-4QL6MXbMDwUX4V8aUBj9S4sLdI82ejuYPEbn-JWfZU2-YJkSZI8QnCPwXGPFZoOPcoQnLQU50xUI_QjNwg2Cdt_BcVM3G7VIyi8NJkxcaFKIo6jKNIsM_BfZ8fCfB99z7E8A3RV8dgYspnmxcUsIo5J8UhPwdmBZU6IDFx7kReU5O7HsMO7Tj3CbXEynbY8XBaQdWzHQF72MwEOn0lZklhOlMWY-pyV_ZJkiDCdUnHcIFyXEpzIRfDh2g3SmwrYp5y8pz8PciKyii9y2K9fTripY8PALCcSNgeKYnE1IEWI3wXDvUinOebLknE8EU18FZYucVN53bKyyrKFMzKrHov2jSpgrE0rQSHbdqtIYK7zpVVKtTbszLLcJ8rJZla1PHDSKrLyyypepYWRY8ynuYUHKrd5ZLg6D3mBWpSvLbLLvxa7sqac6KILPxNoeqDkQGzBgv8MpgienxmOKY8Wtbc59nbB8PHyyby0s8dxPxWSRPsg97s-VGYnR1HSMLC80nyzFcdAzqy2Rb5cTvWFB0I970uJptdPcslXOZHpSNvGCYhEz59ky1mQuuFNin5xyvMLE9qdqgt6alyWCyWoMx1OVJ9h2jlynOk8Yl8cFNc19C8w-qsm249zYJc1y5eImDhpZC95T01bU38B93JWGI9b2-Xoq9iK5eBPx4L9gO03S7HF2YmJUn903xeJ-40nVbsRLS4LI_9tP0_TuW1u7Kjc5jmTI4k555QY5sadbbFmT2JWEVYkOo2BdxcX-WzkXd5H32uRU_J2Cd_axgMdzx8IjIfXEB_xoWL2IqDdo71tPIFp7gWvdKj1O6Ex3wwF8oH8ZmeHBGC2CXIVOndFBz8UF3P8UFedK7fF2K5kT7MwNUXw-VlmFmJYhUudxxKxCDEfCH8vKoVJj0fKlkoFeSwiEfidIEHDjpOLLCkJ8bDm-FgtI5RoLzn9t0UCPR3iYi8DWGSTt_iXxHifOE-tYD-yDK-WEyp7jjhEiUChF5pr3D-jWRKUFyFOQ6OMTijkJGSMkeELYmoBomj0DQHAEBoA2gKFISQ2o0BSAANxAA
+	⚠ Please be aware that this chart is not an official demo of Apache ECharts but is made by user-generated code.
+-->
+<!DOCTYPE html>
+<html lang="en" style="height: 100%">
+<head>
+  <meta charset="utf-8">
+</head>
+<body style="height: 100%; margin: 0">
+  <div id="container" style="height: 100%"></div>
+
+  
+  <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts@5.4.1/dist/echarts.min.js"></script>
+  <!-- Uncomment this line if you want to dataTool extension
+  <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts@5.4.1/dist/extension/dataTool.min.js"></script>
+  -->
+  <!-- Uncomment this line if you want to use gl extension
+  <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts-gl@2/dist/echarts-gl.min.js"></script>
+  -->
+  <!-- Uncomment this line if you want to echarts-stat extension
+  <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts-stat@latest/dist/ecStat.min.js"></script>
+  -->
+  <!-- Uncomment this line if you want to use map
+  <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts@4.9.0/map/js/china.js"></script>
+  <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts@4.9.0/map/js/world.js"></script>
+  -->
+  <!-- Uncomment these two lines if you want to use bmap extension
+  <script type="text/javascript" src="https://api.map.baidu.com/api?v=3.0&ak=YOUR_API_KEY"></script>
+  <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts@5.4.1/dist/extension/bmap.min.js"></script>
+  -->
+
+  <script type="text/javascript">
+    var dom = document.getElementById('container');
+    var myChart = echarts.init(dom, null, {
+      renderer: 'canvas',
+      useDirtyRect: false
+    });
+    var app = {};
+    
+    var option;
+
+    option = {
+  title: {
+    text: 'average age of actors'
+  },
+  xAxis: {
+    type: 'category',
+    data: [
+      1919, 1924, 1925, 1926, 1927, 1928, 1929, 1930, 1931, 1932, 1933, 1934,
+      1935, 1936, 1937, 1938, 1939, 1940, 1941, 1942, 1943, 1944, 1945, 1946,
+      1947, 1948, 1949, 1950, 1951, 1952, 1953, 1954, 1955, 1956, 1957, 1958,
+      1959, 1960, 1961, 1962, 1963, 1964, 1965, 1966, 1967, 1968, 1969, 1970,
+      1971, 1972, 1973, 1974, 1975, 1976, 1977, 1978, 1979, 1980, 1981, 1982,
+      1983, 1984, 1985, 1986, 1987, 1988, 1989, 1990, 1991, 1992, 1993, 1994,
+      1995, 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2006,
+      2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015
+    ]
+  },
+  yAxis: {
+    type: 'value'
+  },
+  series: [
+    {
+      data: [
+        17.0, 19.0, 20.0, 20.666666666666668, 22.0, 24.4375, 21.666666666666668,
+        26.4, 26.0, 25.95, 24.642857142857142, 21.73170731707317,
+        25.32608695652174, 26.74, 28.31578947368421, 27.32608695652174,
+        27.029850746268657, 27.557692307692307, 26.979166666666668,
+        28.90566037735849, 27.025641025641026, 25.95, 28.875,
+        29.051724137931036, 30.418181818181818, 30.49230769230769,
+        29.860759493670887, 29.183908045977013, 30.16883116883117,
+        31.819148936170212, 32.765765765765764, 32.56382978723404,
+        33.02105263157895, 32.598130841121495, 35.35, 33.13636363636363,
+        32.66990291262136, 32.627450980392155, 33.700934579439256,
+        37.31782945736434, 34.46666666666667, 35.80434782608695,
+        35.559701492537314, 35.61594202898551, 34.5, 35.994082840236686,
+        34.71165644171779, 34.90909090909091, 34.182648401826484,
+        35.243654822335024, 34.796460176991154, 35.93852459016394,
+        34.17272727272727, 36.62301587301587, 35.84738955823293,
+        35.814126394052046, 37.51027397260274, 37.35664335664335, 36.29,
+        37.26126126126126, 34.065963060686016, 34.292792792792795,
+        34.140756302521005, 34.03105590062112, 35.93724696356275,
+        34.06363636363636, 34.774410774410775, 36.65723270440252,
+        35.86830015313936, 35.044444444444444, 34.99431818181818,
+        35.10459770114942, 35.7882096069869, 36.677198975234845,
+        36.966012084592144, 36.56515867656989, 36.87366436203646,
+        36.77895433487757, 37.07798165137615, 36.50204081632653,
+        36.78632478632478, 37.341375770020534, 37.85131195335277,
+        38.52062527138515, 38.87384615384615, 39.25708972570897,
+        39.808730873087306, 41.34419458467187, 42.12467532467532,
+        44.007820136852395, 42.626168224299064, 43.4, 50.833333333333336
+      ],
+      type: 'line'
+    }
+  ]
+};
+
+    if (option && typeof option === 'object') {
+      myChart.setOption(option);
+    }
+
+    window.addEventListener('resize', myChart.resize);
+  </script>
+</body>
+</html>
