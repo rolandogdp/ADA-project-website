@@ -14,7 +14,13 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 	</head>
 	<body class="is-preload">
-
+		
+		<script>
+			function adjustIframe(obj) {
+			obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
+			}
+		
+		</script>
 		<!-- Wrapper -->
 			<div id="wrapper">
 
@@ -38,7 +44,7 @@
 							<h2>Word cloud</h2>
 						</header>
 						<div class="content">
-							<iframe src="widgets/Word_cloud.html" title="Word_cloud" height="500" width="1000" scroll="no" frameborder="0" ></iframe> 
+							<iframe onload="adjustIframe(this)" loading="lazy" src="widgets/Word_cloud.html" title="Word_cloud"  id="child-iframe" scroll="no" frameborder="0" ></iframe> 
 							<!-- <embed src="widgets/Word_cloud.html" type="text/html"> -->
 							<p><strong>TODO</strong> Describe word cloud</p>
 							<!-- <span class="image main"><img src="images/pic02.jpg" alt="" /></span> -->
@@ -52,7 +58,7 @@
 						</header>
 						<div class="content">
 							
-							<iframe src="widgets/Word_cloud_2000.html" title="Word_cloud" 
+							<iframe onload="adjustIframe(this)"  loading="lazy" src="widgets/Word_cloud_2000.html" title="Word_cloud" 
 							height="500" width="1000" scroll="no" frameborder="0"
 							 ></iframe> 
 							<!-- <embed src="widgets/Word_cloud.html" type="text/html"> -->
@@ -68,7 +74,7 @@
 						<h2> Word Cloud 2020</h2>
 					</header>
 					<div class="content">
-						<iframe src="widgets/Word_cloud_2020.html" title="Word_cloud" height="500" width="1000" scroll="no" frameborder="0" ></iframe> 
+						<iframe onload="adjustIframe(this)" loading="lazy" src="widgets/Word_cloud_2020.html" id="child-iframe" title="Word_cloud" height="500" width="1000" scroll="no" frameborder="0" ></iframe> 
 						<!-- <embed src="widgets/Word_cloud.html" type="text/html"> -->
 						<p><strong>TODO</strong> Describe word cloud</p>
 						<!-- <span class="image main"><img src="images/pic02.jpg" alt="" /></span> -->
@@ -82,7 +88,7 @@
 						<h2> Actor_Age</h2>
 					</header>
 					<div class="content">
-						<iframe src="widgets/actor_age.html" title="actor_age" height="500" width="1000" scroll="no" frameborder="0" ></iframe> 
+						<iframe onload="adjustIframe(this)" loading="lazy" src="widgets/actor_age.html" title="actor_age" height="500" width="1000" scroll="no" frameborder="0" ></iframe> 
 						<!-- <embed src="widgets/Word_cloud.html" type="text/html"> -->
 						<p><strong>TODO</strong> Describe word cloud</p>
 						<!-- <span class="image main"><img src="images/pic02.jpg" alt="" /></span> -->
@@ -95,7 +101,7 @@
 						<h2> Gender</h2>
 					</header>
 					<div class="content">
-						<iframe src="widgets/gender.html" title="actor_age" height="500" width="1000" scroll="no" frameborder="0" ></iframe> 
+						<iframe onload="adjustIframe(this)" loading="lazy" src="widgets/gender.html" title="actor_age" height="500" width="1000" scroll="no" frameborder="0" ></iframe> 
 						<!-- <embed src="widgets/Word_cloud.html" type="text/html"> -->
 						<p><strong>TODO</strong> Describe word cloud</p>
 						<!-- <span class="image main"><img src="images/pic02.jpg" alt="" /></span> -->
@@ -108,7 +114,8 @@
 						<h2> genres</h2>
 					</header>
 					<div class="content">
-						<iframe src="widgets/genres.html" title="actor_age" height="500" width="1000" scroll="no" frameborder="0" ></iframe> 
+						<iframe onload="adjustIframe(this)" loading="lazy"
+						 src="widgets/genres.html" title="actor_age" height="500" width="1000" scroll="no" frameborder="0" ></iframe> 
 						<!-- <embed src="widgets/Word_cloud.html" type="text/html"> -->
 						<p><strong>TODO</strong> Describe word cloud</p>
 						<!-- <span class="image main"><img src="images/pic02.jpg" alt="" /></span> -->
@@ -121,7 +128,7 @@
 						<h2> World map</h2>
 					</header>
 					<div class="content">
-						<iframe src="widgets/World_map.html" title="actor_age" height="500" width="1000" scroll="no" frameborder="0" ></iframe> 
+						<iframe loading="lazy" src="widgets/World_map.html" title="actor_age" height="500" width="1000" scroll="no" frameborder="0" ></iframe> 
 						<!-- <embed src="widgets/Word_cloud.html" type="text/html"> -->
 						<p><strong>TODO</strong> Describe word cloud</p>
 						<!-- <span class="image main"><img src="images/pic02.jpg" alt="" /></span> -->
@@ -130,7 +137,7 @@
 
 
 
-				<!-- Section -->
+				<!-- Section
 					<section>
 						<header>
 							<h2>Feugiat consequat tempus ultrices</h2>
@@ -150,7 +157,7 @@
 					</section>
 
 				<!-- Section -->
-					<section>
+					<!-- <section>
 						<header>
 							<h2>Ultrices erat magna sed condimentum</h2>
 						</header>
@@ -171,10 +178,10 @@
 											<a href="images/gallery/fulls/04.jpg" class="landscape"><img src="images/gallery/thumbs/04.jpg" alt="" /></a>
 										</div>
 									</div>
-								</section>
+								</section> -->
 
 							<!-- Section -->
-								<section>
+								<!-- <section>
 									<header>
 										<h3>Nisl consequat</h3>
 										<p>Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin aliquam sed facilisis ante interdum congue. Integer mollis, nisl amet convallis, porttitor magna ullamcorper, amet mauris. Ut magna finibus nisi nec lacinia ipsum maximus.</p>
@@ -186,10 +193,10 @@
 											<a href="images/gallery/fulls/07.jpg"><img src="images/gallery/thumbs/07.jpg" alt="" /></a>
 										</div>
 									</div>
-								</section>
+								</section> -->
 
 							<!-- Section -->
-								<section>
+								<!-- <section>
 									<header>
 										<h3>Lorem gravida</h3>
 										<p>Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aenean ornare velit lacus, ac varius sed enim lorem ullamcorper dolore.  ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis.</p>
@@ -204,10 +211,10 @@
 								</section>
 
 						</div>
-					</section>
+					</section> -->
 
 				<!-- Section -->
-					<section>
+					<!-- <section>
 						<header>
 							<h2>Duis sed adpiscing veroeros amet</h2>
 						</header>
@@ -218,7 +225,7 @@
 								<li><a href="#" class="button large">Learn More</a></li>
 							</ul>
 						</div>
-					</section>
+					</section> -->
 
 				<!-- Elements -->
 				<!--
@@ -489,7 +496,7 @@ print 'Sorted in ' + i + ' iterations.';</code></pre>
 				-->
 
 				<!-- Section -->
-					<section>
+					<!-- <section>
 						<header>
 							<h2>Get in touch</h2>
 						</header>
@@ -511,7 +518,7 @@ print 'Sorted in ' + i + ' iterations.';</code></pre>
 									<li><input type="submit" value="Send Message" class="button primary" /></li>
 								</ul>
 							</form>
-						</div>
+						</div> -->
 						<footer>
 							<ul class="items">
 								<li>
