@@ -15,12 +15,7 @@
 	</head>
 	<body class="is-preload">
 		
-		<script>
-			function adjustIframe(obj) {
-			obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
-			}
 		
-		</script>
 		<!-- Wrapper -->
 			<div id="wrapper">
 
@@ -69,8 +64,7 @@
 						<div class="content">
 							<iframe  loading="lazy" src="widgets/gender.html" title="Fraction of female actors"  id="child-iframe" scroll="no" frameborder="0" height="800px" width="100%" ></iframe> 
 							<!-- <embed src="widgets/Word_cloud.html" type="text/html"> -->
-							<p><strong>TODO</strong> Describe Fraction of female actors</p>
-							<!-- <span class="image main"><img src="images/pic02.jpg" alt="" /></span> -->
+							<p>In this graph we present the evolution from 1927 to 2012 of the fraction of females actors in the dataset. We have that 0 would mean that there are only male actors, and 1 would mean that there are only female actors.</p>
 						</div>
 					</section>
 
@@ -88,7 +82,7 @@
 						<div class="content">
 							<iframe  loading="lazy" src="widgets/genres.html" title="Fraction of female actors"  id="child-iframe" scroll="no" frameborder="0" height="800px" width="100%" ></iframe> 
 							
-							<p><strong>TODO</strong> Describe Fraction of female actors</p>
+							<p>Here we have two plots. The first one is a pie diagram that describes the percentage of the different movies genres. The second one uses the same color code as in the legend above and allows us to show you the evolution of the said percentages in time.</p>
 							
 						</div>
 					</section>
@@ -107,7 +101,7 @@
 						<div class="content">
 							<iframe  loading="lazy" src="widgets/actor_age.html" title="Fraction of female actors"  id="child-iframe" scroll="no" frameborder="0" height="800px" width="100%" ></iframe> 
 							
-							<p><strong>TODO</strong> Describe Fraction of female actors</p>
+							<p>In this graph we can see the evolution of the average age of actors in time. It shows us the data available in the dataset from 1919 to 2013.</p>
 							
 						</div>
 					</section>
@@ -127,9 +121,11 @@
 								</p>
 						</header>
 						<div class="content">
-							<iframe  loading="lazy" src="widgets/World_map_no_title.html" title="Fraction of female actors"  id="child-iframe" scroll="no" frameborder="0" height="800px" width="100%" ></iframe> 
+							<iframe  loading="lazy" src="widgets/World_map_no_title.html" title="Fraction of female actors"  id="child-iframe" scroll="no" frameborder="0" height="500px" width="100%" ></iframe> 
 							
-							<p><strong>TODO</strong> Describe Fraction of female actors</p>
+							<p>This map of the world allows us to see first, for which countries we do have available data. In white you will see countries that do not appear on our dataset. This could be simply because they do not produce movies or simply because there wasn't any in the dataset.
+							It is also color coded to allow to see the amount of movies per country. And the presence of the color coded dots, allows us to see when has a country been actively producing movies.
+							</p>
 							
 						</div>
 					</section>
@@ -158,7 +154,8 @@
 						<div class="content">
 							<iframe  loading="lazy" src="widgets/Word_cloud_diff.html" title="Fraction of female actors"  id="child-iframe" scroll="no" frameborder="0" height="600px" width="100%" ></iframe> 
 							
-							<p><strong>TODO</strong> Describe Fraction of female actors</p>
+							<p>This word cloud compares the different in word frequency between before 1995 and after 1995. It was built by  splitting the dataset into two subdataset. One is for movies before 1995 and the other is for movies after 1995.These are an interesting period as the amount of data on both sides is similar. 
+								 And then we calculate the difference of these two sets, and show the positive difference of the second subset in the word cloud. </p>
 							
 						</div>
 					</section>
@@ -179,10 +176,10 @@
 
 						</header>
 						<div class="content">
-							<img src="images/Relation_between_Popularity_and_Rating.jpg" alt="Relation_between_Popularity_and_Rating">
-							<!-- <iframe  loading="lazy" src="widgets/Word_cloud_diff.html" title="Fraction of female actors"  id="child-iframe" scroll="no" frameborder="0" height="600px" width="100%" ></iframe>  -->
 							
-							<p><strong>TODO</strong> Describe Fraction of female actors</p>
+							<span class="image fill" data-position="center"><img src="images/Relation_between_Popularity_and_Rating.jpg" alt="Relation_between_Popularity_and_Rating">"</span>
+						
+							
 							
 						</div>
 					</section>
@@ -198,18 +195,14 @@
 									Similar to the distribution of all films’ genres, 
 									drama and comedy are the majority of the genres and there are fifteen minority genres(smaller than 30). </p>
 	
-									<p> TODO</p>
-									<p> TODO</p>
-									<p> TODO</p>
-									<p> TODO</p>
-									<p> TODO</p>
+									
 	
 							</header>
 							<div class="content">
-								<iframe  loading="lazy" src="widgets/pie_genres_150.html" title="Fraction of female actors"  id="child-iframe" scroll="no" frameborder="0" height="1000px" width="100%" ></iframe> 
+								<iframe  loading="lazy" src="widgets/pie_genres_150.html" title="Fraction of female actors"  id="child-iframe" scroll="no" frameborder="0" height="600px" width="100%" ></iframe> 
 							
 								<p><strong>TODO</strong> Describe Fraction of female actors</p>
-								<p> TODO</p>
+								
 									
 								
 							</div>
@@ -239,26 +232,7 @@
 
 
 
-								<section >
-									<header>
-										
-										<h2>
-											Rating and Budget:		
-										</h2>
-										<p>The relationship between rating and budget is not strong. 
-											Even with a low budget, the rating can be high. However, with a higher budget, the median will increase and the derivation will reduce. In other words, high budget will raise the lower limit of rating and the possibility that the film is in the medium to high range. 
-											 </p>
-			
-											
-			
-									</header>
-									<div class="content">
-										<iframe  loading="lazy" src="widgets/budget_rating.html" title="Fraction of female actors"  id="child-iframe" scroll="no" frameborder="0" height="600px" width="100%" ></iframe> 
-									
-										<p><strong>TODO</strong> Describe Fraction of female actors</p>
-										
-									</div>
-								</section>
+							
 
 
 									<section >
